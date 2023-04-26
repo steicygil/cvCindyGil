@@ -1,0 +1,230 @@
+
+section{
+    background-color: #424242;
+    color: white;
+}
+
+h3{
+    color: #26A69A;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.contenedorMain{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.foto{
+    margin-right: 30px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-left: 35px;
+    border-style: solid;
+    border-color: #26A69A;
+}
+
+.datosGenerales{
+    margin-right: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.datosGenerales h2{
+    color: #26A69A;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+.inforPesonal{
+display: flex;
+}
+
+.infoPersonalImagenes{
+    display: flex;
+    flex-direction: column;
+}
+
+.infoPersonalDatos{
+    padding: 10px;
+    display: grid;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.contenedorSecundario{
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.containerSecundario1{
+    width: 100%;
+}
+
+.aboutMe{
+    padding: 0.1px;
+    height: 50%;
+    text-align: center;
+    background-color: #424242;
+    color: white;
+}
+
+.aboutMe p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.skills{
+    margin-top: 4px;
+    padding: 0.1px;
+    height: 49.5%;
+    text-align: center;
+    background-color: #424242;
+    color: white;
+}
+
+.skills p {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.education{
+    width: 100%;
+    margin-left: 5px;
+    background-color: #424242;
+    color: white;
+}
+
+.education p{
+    margin-left: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.empresas{
+    color: #26C6DA;
+}
+
+.contenedorFinal{
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.referencias{
+    width: 50%;
+    height: 200px;
+    text-align: center;
+}
+
+.referencias p {
+    display: inline-block;
+    margin: 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.intereses{
+    width: 50%;
+    height: 200px;
+    margin-left: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.intereses p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.imagenesInteres{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.imagenesIntereses{
+    width: 50px;
+    height: 50px;
+}
+
+img {
+    transition: transform .7s;
+}
+
+.intereses img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #26A69A;
+    border-radius: 15%;
+}
+
+/* Para tablet y celular */
+@media (max-width: 768px) {
+
+    .contenedorMain{
+        flex-direction: column;
+        display: table;
+    }
+
+    .perfil{
+        width: 100%;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .datosGenerales{
+        width: 100%;
+        text-align: center;
+    }
+
+    .inforPesonal{
+       justify-content: center;
+    }
+
+    .contenedorSecundario{
+        flex-direction: column;
+    }
+
+    .education {
+        margin: 0%;
+        padding: 0%;
+        margin-top: 5px;
+    }
+
+    .education p {
+        margin-right: 5px;
+    }
+
+    .contenedorFinal{
+        flex-direction: column;
+    }
+
+    .referencias{
+        width: 100%;
+        height: auto;
+    }
+
+    .referencias p {
+        margin-top: 0%;
+    }
+
+    .intereses{
+        width: 100%;
+        margin: 0%;
+        margin-top: 5px;
+        padding: 0%;
+    }
+
+    .imagenesInteres{
+        width: 80%;
+    }
+}
